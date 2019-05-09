@@ -1,10 +1,12 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
-    background-color: aliceblue; 
+    /* background-color: aliceblue;  */
+    background-color: #EEE;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     grid-auto-rows: 100px;
+    color: #2D9699;    
 }
 
 h1 {
@@ -21,4 +23,12 @@ div {
 footer {
     grid-column-start: 2;
     grid-row-start: 5;
+}
+
+a, a:hover, a:visited, a:active
+{
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+	color:#2D9699;
+	text-decoration:none;
 }
