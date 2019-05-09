@@ -1,0 +1,90 @@
+
+table { 
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+    /* width: 780px; */
+    /* Table reset stuff */
+    border-collapse: collapse; border-spacing: 0;
+    border: 0 none 
+  }
+div {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #2D9699; 
+    font-weight: bold;
+    text-indent: 40px;
+}
+span {
+    color: #000;
+}
+        
+td, th {
+    border: 2px solid #FDFDFD; height: 30px;  text-align: center;
+}
+            
+th {
+    /* Gradient Background */
+    background: #ffa938;/*linear-gradient(#333 0%,#169da5 100%);*/
+    color: #FFF; 
+    font-weight: bold;
+height: 40px;
+}
+        
+td {
+    background: #FAFAFA; text-align: center; width: 80px;
+}
+
+/* Zebra Stripe Rows */		
+tr:nth-child(even) td { background: #EEE; } 
+tr:nth-child(odd) td { background: #FDFDFD; }
+
+/* First-child blank cells! */
+tr th:first-child { 
+    color: #2D9699; 
+    background: none; 
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: right;
+    padding-right: 10px;
+    width: 20px;
+    height: 30px;	
+}
+
+/* Add border-radius to specific cells! */
+tr:first-child th:nth-child(2) { 
+    width: 240px;
+    border-radius: 8px 0 0 8px;  
+} 
+
+tr td:last-child { 	
+    font-size: 0.1em;
+}
+
+
+
+tr:first-child th:last-child { 
+    width: 300px;
+    border-radius: 0 8px 8px 0;
+}
+
+tr td:nth-child(2) {
+    font-style: italic;
+}
+
+tr:nth-child(1) td:nth-child(2) {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.oth {
+    opacity: 0.6;
+}
+
+.dead {
+    opacity: 0.3;
+}
+
+#home {
+    margin-left: 47%;
+}
+  
