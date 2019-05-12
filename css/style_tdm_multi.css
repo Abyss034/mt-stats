@@ -82,9 +82,9 @@ table {
     /* width: 780px; */
     /* Table reset stuff */
     border-collapse: collapse; border-spacing: 0;
-    border: 0 none;
-    
+    border: 0 none 
   }
+
 main .metadata {
     font-family: Helvetica, Arial, sans-serif;
     color: #2D9699; 
@@ -131,25 +131,33 @@ tr th:first-child {
 }
 
 /* Add border-radius to specific cells! */
-tr:first-child th:nth-child(2) { 
-    width: 240px;
+tr:first-child th:nth-child(2) {
     border-radius: 8px 0 0 8px;  
+}
+
+tr:first-child th:nth-child(3) { 
+    width: 240px;  
 } 
 
 tr td:last-child { 	
     font-size: 0.7em;
 }
 
+
 tr:first-child th:last-child { 
     width: 300px;
     border-radius: 0 8px 8px 0;
 }
 
-tr td:nth-child(2) {
+tr td:nth-child(3) {
     font-style: italic;
 }
 
-tr:nth-child(1) td:nth-child(2) {
+tr td:nth-child(2) { 
+    width: 40px;
+}
+
+tr:nth-child(1) td:nth-child(3) {
     font-weight: bold;
     font-size: 1.1em;
 }
