@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
     background-color: #EEE;
-    color: #2D9699;
+    color: white; /* #2D9699; */
     display: grid;
     width: 100%;
     grid-template:  "nav head" 100px
