@@ -1,0 +1,43 @@
+<style type="text/css">
+    label {
+        display: block;
+        font: 1rem 'Fira Sans', sans-serif;
+    }
+
+    input,
+    label {
+        margin: .4rem 0;
+    }
+</style>
+
+<label for="start">Date du jour:</label>
+
+<input type="date" id="start" name="trip-start"
+       value="2019-02-17">
+
+<label for="tentacles" title="entier positif">Coût de reparation:</label>
+
+<input type="number" id="reparation" name="reparation"
+         step="1000" value=1000>
+
+<label for="end" title="stade a 100%">Date du prochain event:</label>
+
+<input type="date" id="end" name="trip-end"
+       value="2019-02-18">
+
+<div>
+    <input type="button" value="ok" onClick="calcule()">
+</div>
+
+<script>
+    function calcule()
+    {
+        var start = Date.parse(document.getElementById("start").value);
+        var end = Date.parse(document.getElementById("end").value);
+        var nbdays = (end - start) / (1000 * 3600 * 24);
+        var repa = document.getElementById("reparation").value;
+        var coef = repa / nbdays
+        var guard = coef * 0.010123097 - 1.34961127308066
+        alert("nombre de gardien: " + guard.toFixed(2));
+    }
+</script>
