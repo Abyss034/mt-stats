@@ -10,34 +10,48 @@
     }
 </style>
 
-<label for="start">Date du jour:</label>
+<body>
+    <h2>Calculer ton nombre de gardien?</h2>
+    <br>
+    <label for="tentacles" title="entier positif">Coût de reparation:</label>
+    <input type="number" id="reparation" name="reparation" step="1000" value=10000>
+    <label for="end" title="stade a 100%">Date du prochain event:</label>
+    <script type="text/javascript">
 
-<input type="date" id="start" name="trip-start"
-       value="2019-02-17">
+        var start = new Date(Date.now());
+        var start_str = start.toISOString().split('T')[0]
+        input = document.createElement('input');
+        input.setAttribute('type', "date");
+        input.setAttribute('id', "end");
+        input.setAttribute('name', "trip-end");
+        input.setAttribute('min', start_str);
+        input.setAttribute('value', start_str);
+        document.body.appendChild(input);
 
-<label for="tentacles" title="entier positif">Coût de reparation:</label>
+        function calcule()
+        {
+            var start = Date.now();
+            var end = Date.parse(document.getElementById("end").value);
+            var nbdays = (end - start) / (1000 * 3600 * 24);
+            var repa = document.getElementById("reparation").value;
+            var coef = repa / nbdays
+            var guard = Math.round(coef * 0.010123097 - 1.34961127308066)
+            alert("nombre de gardien: " + guard);
+        }
+    </script>
+    <div>
+        <input type="button" value="ok" onClick="calcule()">
+    </div>
+    <br>
+    <h4>pour avoir un Stade à 100% lors de ta prochaine organisation de meeting ou reception de ligue/IN/ICN</h4>
+    <p>1- Saisie la valeur actuelle de reparation de ton stade</p>
+    <p>2- Saisie la date du prochain "Event" dans ton Stade</p>
+    <p>"ok": resultat le nombre total de gardien à avoir dans ton staff</p>
+    <br>
+    <h4>note:</h4>
+    <p>la formule se base sur une valeur moyenne de réparation du stade par les gardiens calculer entre 91% et 99%</p>
+    <p>les mécaniques du jeux font que la formule sous estimera cette valeur entre 91-94% et sur-estimera entre 95-99%</p>
+    <p>je conseille donc d'utilister la formule seulement apres une reception dans le stade(idealement vers 90%)</p>
+    <p>et de ne plus ajuster le nombre de gardien avec jusqu'a 100%</p>
 
-<input type="number" id="reparation" name="reparation"
-         step="1000" value=1000>
-
-<label for="end" title="stade a 100%">Date du prochain event:</label>
-
-<input type="date" id="end" name="trip-end"
-       value="2019-02-18">
-
-<div>
-    <input type="button" value="ok" onClick="calcule()">
-</div>
-
-<script>
-    function calcule()
-    {
-        var start = Date.parse(document.getElementById("start").value);
-        var end = Date.parse(document.getElementById("end").value);
-        var nbdays = (end - start) / (1000 * 3600 * 24);
-        var repa = document.getElementById("reparation").value;
-        var coef = repa / nbdays
-        var guard = coef * 0.010123097 - 1.34961127308066
-        alert("nombre de gardien: " + guard.toFixed(2));
-    }
-</script>
+</body>
