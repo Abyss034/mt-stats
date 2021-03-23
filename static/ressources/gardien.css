@@ -1,0 +1,40 @@
+
+body::after {
+    filter: sepia(100%);
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.box {
+    background: var(--minor2-bg-color);
+    border-radius: 0.5rem;
+    box-shadow: 0.1rem 0.1rem 0.3rem 0.2rem var(--main-txt-color);
+    padding: 2.5rem;
+}
+
+.box div {
+    margin: 1rem;
+}
+
+input {
+    width: 14rem;
+}
+
+#btn {
+    padding: .5rem 0;
+    border: .2rem solid var(--main-bg-color);
+    border-radius: 0.5rem;    
+}
+
+#reparation {
+    display: inline-block;
+    text-align: right;
+}
+
+
+

@@ -33,7 +33,7 @@ main li a {
     height: var(--container-size);
     width: calc(var(--container-size) * 4);
     text-align: center;
-    box-shadow: 1px 1px 3px 2px var(--main-txt-color);
+    box-shadow: 0.1rem 0.1rem 0.3rem 0.2rem var(--main-txt-color);
 }
 /*
 header a:hover,

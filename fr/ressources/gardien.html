@@ -13,10 +13,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Statithlon - Ressources</title>
+    <title>Statithlon - Gardiens</title>
     <link rel="shortcut icon" type="image/png" href="/mt-stats/static/image/favicon.png">
     <link rel="stylesheet" type="text/css" href="/mt-stats/static/base.css">
     <link rel="stylesheet" type="text/css" href="/mt-stats/static/ressources/index.css">
+
+<link rel="stylesheet" type="text/css" href="/mt-stats/static/ressources/gardien.css">
 </head>
   <body>
     <header class="track-border">
@@ -32,16 +34,40 @@
     <main>
       <nav>
         <ul>
-          <li><a class="track-border track-border-cut link-hover" href=/mt-stats/fr/ressources/gardien.html>Gardiens</a></li>
+          <li><a class="track-border track-border-cut link-hover active-link" href=/mt-stats/fr/ressources/gardien.html>Gardiens</a></li>
           <li><a class="track-border track-border-cut link-hover" href=#>Graphiques</a></li>
           <li><a class="track-border track-border-cut link-hover" href=/mt-stats/fr/ressources/epreuves.html>Epreuves</a></li>
           </ul>
       </nav>
-      
+      <section>
+<div class=box>
+    <h2>Calcule ton nombre de gardiens</h2>
+    <br>
+    <label for="tentacles" title="entier positif">Coût de réparation actuel:</label>
+    <div >
+        <input type="number" id="reparation" name="reparation" step="1000" value=10000>
+    </div>
+    <label for="end" title="stade a 100%">Date du prochain événement:</label>
+    <div id="calendar"></div>
+    <div>
+        <input type="button" id="btn" value="Calculer" onClick="calcule()">
+    </div>
+    <br>
+    <h4>Pour avoir un Stade à 100% lors du prochain événement</h4>
+    <p>1- Saisir la valeur actuelle de réparation de ton stade</p>
+    <p>2- Saisir la date du prochain événement dans ton Stade</p>
+    <p>"ok": resultat le nombre total de gardiens à avoir dans ton staff</p>
+    <br>
+    <h4>Note:</h4>
+    <p>La formule donne une "estimation" du nombre idéal de gardiens pour un stade de 30,000 places</p>
+</div>
+    </section>
     </main>
     <footer class="track-border">
       <a class="maxithlon-link" href="https://www.maxithlon.com"><img src="https://www.maxithlon.com/common/images/esterne/maxithlon_mb.gif"  alt="Maxithlon" border="0"></a>
       <p>Photo de <a href="https://unsplash.com/@haroldjonker?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Harold Jonker</a> sur <a href="https://unsplash.com/s/photos/athletics-stadium?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
     </footer>
+    <script type=text/javascript src="/mt-stats/static/ressources/gardien.js"></script>
+
   </body>
 </html>

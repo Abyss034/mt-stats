@@ -13,10 +13,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Statithlon - Resources</title>
+    <title>Statithlon - Groundsmen</title>
     <link rel="shortcut icon" type="image/png" href="/mt-stats/static/image/favicon.png">
     <link rel="stylesheet" type="text/css" href="/mt-stats/static/base.css">
     <link rel="stylesheet" type="text/css" href="/mt-stats/static/ressources/index.css">
+
+<link rel="stylesheet" type="text/css" href="/mt-stats/static/ressources/gardien.css">
 </head>
   <body>
     <header class="track-border">
@@ -32,16 +34,40 @@
     <main>
       <nav>
         <ul>
-          <li><a class="track-border track-border-cut link-hover" href="/mt-stats/en/ressources/gardien.html">Groundsmen</a></li>
+          <li><a class="track-border track-border-cut link-hover active-link" href="/mt-stats/en/ressources/gardien.html">Groundsmen</a></li>
           <li><a class="track-border track-border-cut link-hover" href="#">Graphics</a></li>
           <li><a class="track-border track-border-cut link-hover" href="/mt-stats/en/ressources/epreuves.html">Events</a></li>
           </ul>
       </nav>
-      
+      <section>
+<div class=box>
+    <h2>Calculate your number of groundsmen</h2>
+    <br>
+    <label for="tentacles" title="entier positif">Current condition recovery:</label>
+    <div >
+        <input type="number" id="reparation" name="reparation" step="1000" value=10000>
+    </div>
+    <label for="end" title="stade a 100%">Next event date:</label>
+    <div id="calendar"></div>
+    <div>
+        <input type="button" id="btn" value="Compute" onClick="calcule()">
+    </div>
+    <br>
+    <h4>To have a 100% Stadium during the next event</h4>
+    <p>1- Enter the current repair value of your stadium</p>
+    <p>2- Enter the date of the next event in your Stadium</p>
+    <p>"ok": result the total number of groundsmen to have in your staff</p>
+    <br>
+    <h4>Note:</h4>
+    <p>The formula gives an "estimate" of the ideal number of groundsmen for a 30,000-seat stadium</p>
+</div>
+    </section>
     </main>
     <footer class="track-border">
       <a class="maxithlon-link" href="https://www.maxithlon.com"><img src="https://www.maxithlon.com/common/images/esterne/maxithlon_mb.gif"  alt="Maxithlon" border="0"></a>
       <p>Photo by <a href="https://unsplash.com/@haroldjonker?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Harold Jonker</a> on <a href="https://unsplash.com/s/photos/athletics-stadium?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
     </footer>
+    <script type=text/javascript src="/mt-stats/static/ressources/gardien.js"></script>
+
   </body>
 </html>

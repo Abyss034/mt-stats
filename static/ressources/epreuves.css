@@ -3,6 +3,12 @@ body::after {
     filter: sepia(100%);
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
 section table {
     border-collapse: collapse;
     background-color: var(--minor2-bg-color);
@@ -90,6 +96,14 @@ section tbody tr:nth-child(5) {
 
 section table tbody tr:nth-child(5) {
     border-bottom: 0.3rem solid var(--main-bg-color);
+}
+
+section p {
+    margin-left: auto;
+    width: fit-content;
+    background: var(--minor2-bg-color);
+    border-radius: 0.5rem;
+    padding: 0.25rem .5rem;
 }
 
 

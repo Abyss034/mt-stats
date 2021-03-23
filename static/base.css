@@ -11,16 +11,16 @@
 -----------------------*/
 
 :root {
-    --main-bg-color: #a14d43;
-    --minor1-bg-color: #BFE0E5;
-    --minor2-bg-color: #eeeae7;
-    --minor3-bg-color: #ffab03;
-    --main-txt-color: #050505;
+    --main-bg-color: #a14d43;  /*rouge*/
+    --minor1-bg-color: #BFE0E5;  /*bleu*/
+    --minor2-bg-color: #eeeae7;  /*blanc*/
+    --minor3-bg-color: #ffab03;  /*orange*/
+    --main-txt-color: #050505; /*noir*/
     --base-txt-size: 1.6rem;
     --container-width: 75%;
     --container-height: 9.2rem;
-    --male-color: #32A9AF;
-    --female-color: #E63CE6;
+    --male-color: #32A9AF;  /*bleu*/
+    --female-color: #E63CE6;  /*rose*/
 }
 
 
