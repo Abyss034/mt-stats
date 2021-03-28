@@ -1,0 +1,126 @@
+
+body::after {
+    filter: sepia(100%);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--minor2-bg-color);
+    height: fit-content;
+    border-radius: 0.5rem;
+    padding: 0.25rem .5rem;
+    gap: 1rem;
+}
+
+section table {
+    border-collapse: collapse;
+    background-color: var(--minor2-bg-color);
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    box-shadow: 1px 1px 3px 2px var(--main-txt-color);
+}
+
+section thead th {
+    background-color: var(--main-bg-color);
+    position: sticky;
+    top: 0;
+}
+
+section thead tr {
+    background-color: var(--main-bg-color);
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    color: #FFFFFF;
+}
+
+section tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+section th, section td {
+    padding: 0.25rem;
+    border-bottom: 0.1rem solid #ccc;
+    border-left: 0.1rem solid #ccc;
+    border-right: 0.1rem solid #ccc;
+}
+
+section table thead th {
+    text-align: center;
+}
+/*
+section thead th:nth-child(2) {
+    min-width: 23rem;
+}
+
+section thead th:nth-child(3) {
+    min-width: 9rem;
+}*/
+/*
+section tbody td {
+    text-align: right;
+}
+
+section tbody td:first-child {
+    text-align: left;
+}
+
+section tbody td:nth-child(2),
+section tbody td:nth-child(5) {
+    text-align: left;
+}
+
+section .record-last-table td:last-child {
+    text-align: left;
+}
+
+section tbody th {
+    text-align: left;
+}*/
+
+section thead th:first-child {
+    border-top-left-radius: 0.8rem;
+}
+
+section thead th:last-child {
+    border-top-right-radius: 0.8rem;
+}
+
+section tbody tr:last-child {
+    border-bottom: 0.3rem solid var(--main-bg-color);
+}
+
+section caption {
+    margin-bottom: 0.5rem;
+    font-size: calc(var(--base-txt-size) * 1.5);
+    /*width: fit-content;
+    background: var(--minor2-bg-color);
+    border-radius: 0.5rem;*/
+    padding: 0.25rem .5rem;
+}
+
+section .stat {    
+    /*background: var(--minor2-bg-color);*/
+    border-radius: 0.5rem;
+    /*box-shadow: 1px 1px 3px 2px var(--main-txt-color);*/
+    padding: 0.25rem .5rem;
+}
+
+.stat h1 {
+    font-size: calc(var(--base-txt-size) * 1.5);
+    font-weight: normal;
+    margin: 0.5rem;
+    text-align: center;
+}
+
+.stat p {
+    margin: 0.25rem;
+}
+
+section .source {
+    margin-left: auto;
+    /*width: fit-content;
+    background: var(--minor2-bg-color);
+    border-radius: 0.5rem;*/
+    padding: 0.25rem .5rem;
+}

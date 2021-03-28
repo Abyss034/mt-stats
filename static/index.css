@@ -35,11 +35,6 @@ main li a {
     text-align: center;
     box-shadow: 0.1rem 0.1rem 0.3rem 0.2rem var(--main-txt-color);
 }
-/*
-header a:hover,
-main li a:hover {
-    color: var(--main-bg-color);
-}*/
 
 
 

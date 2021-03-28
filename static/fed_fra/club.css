@@ -41,62 +41,51 @@ section th, section td {
     border-right: 0.1rem solid #ccc;
 }
 
+section tbody td {
+    text-align: right;
+}
+/*
 section table thead th {
     text-align: center;
 }
 
-section tbody th {
-    text-align: left;
-}
-
-section td {
+section tbody th:first-child {
     text-align: right;
 }
 
+section tbody td:nth-child(2) {
+    text-align: left;
+}*/
+
+section tbody tr:first-child {
+    font-weight: bold;
+}
+
 section thead th:first-child {
-    min-width: 20rem;
     border-top-left-radius: 0.8rem;
 }
 
 section thead th:last-child {
-    min-width: 20rem;
     border-top-right-radius: 0.8rem;
 }
 
-section thead th:nth-child(2),
 section thead th:nth-child(3),
-section thead th:nth-child(4),
-section thead th:nth-child(5),
-section thead th:nth-child(6),
-section thead th:nth-child(7),
-section thead th:nth-child(8),
-section thead th:nth-child(9),
-section thead th:nth-child(10),
-section thead th:nth-child(11)  {
-    min-width: 10rem;
+section thead th:nth-child(4) {
+    min-width: 9rem;
 }
 
-section thead th:nth-child(12) {
-    min-width: 8rem;
-}
-section thead th:nth-child(13){
-    min-width: 6rem;
-}
-
-section tbody tr:nth-child(26),
-section tbody tr:nth-child(22),
-section tbody tr:nth-child(18),
-section tbody tr:nth-child(14),
-section tbody tr:nth-child(11),
-section tbody tr:nth-child(8),
-section tbody tr:nth-child(5) {
+section tbody tr:last-child {
     border-bottom: 0.3rem solid var(--main-bg-color);
 }
 
-/*
-section table tbody tr:nth-child(5) {
-    border-bottom: 0.3rem solid var(--main-bg-color);
-}*/
+section caption {
+    margin-bottom: 0.5rem;
+    font-size: calc(var(--base-txt-size) * 1.5);
+    /*width: fit-content;*/
+    background: var(--minor2-bg-color);
+    border-radius: 0.5rem;
+    padding: 0.25rem .5rem;
+}
 
 section p {
     margin-left: auto;
@@ -105,6 +94,11 @@ section p {
     border-radius: 0.5rem;
     padding: 0.25rem .5rem;
 }
+
+.nation {
+    min-width: 35rem;
+}
+
 
 
 
