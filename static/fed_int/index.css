@@ -1,0 +1,36 @@
+
+main {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 2rem;
+}
+
+main nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    position: sticky;
+    top: 0;
+}
+
+main li a {
+    --container-size: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(var(--base-txt-size) * 1.3);
+    background-color: var(--minor2-bg-color);
+    height: var(--container-size);
+    width: calc(var(--container-size) * 3);
+    text-align: center;
+}
+
+aside {
+    position: sticky;
+    bottom: 0;
+    margin-top: auto;
+}
+
+
+
