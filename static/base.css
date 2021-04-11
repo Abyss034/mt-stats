@@ -46,7 +46,7 @@ body {
 
 a{
 	text-decoration: none;
-	text-transform: capitalize;
+	/*text-transform: capitalize;*/
 	color: inherit;
 	cursor: pointer;
 }

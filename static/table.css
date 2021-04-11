@@ -1,0 +1,86 @@
+
+.table-base {
+    border-collapse: collapse;
+    background-color: var(--minor2-bg-color);
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    box-shadow: 1px 1px 3px 2px var(--main-txt-color);
+}
+
+.table-base thead th {
+    background-color: var(--main-bg-color);
+    position: sticky;
+    top: 0;
+}
+
+.table-base thead tr {
+    background-color: var(--main-bg-color);
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    color: #FFFFFF;
+}
+
+.table-base tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.table-base th, .table-base td {
+    padding: 0.25rem;
+    border-bottom: 0.1rem solid #ccc;
+    border-left: 0.1rem solid #ccc;
+    border-right: 0.1rem solid #ccc;
+}
+
+.table-base table thead th {
+    text-align: center;
+}
+/*
+section thead th:nth-child(2) {
+    min-width: 23rem;
+}
+
+section thead th:nth-child(3) {
+    min-width: 9rem;
+}*/
+/*
+section tbody td {
+    text-align: right;
+}
+
+section tbody td:first-child {
+    text-align: left;
+}
+
+section tbody td:nth-child(2),
+section tbody td:nth-child(5) {
+    text-align: left;
+}
+
+section .record-last-table td:last-child {
+    text-align: left;
+}
+
+section tbody th {
+    text-align: left;
+}*/
+
+.table-base thead th:first-child {
+    border-top-left-radius: 0.8rem;
+}
+
+.table-base thead th:last-child {
+    border-top-right-radius: 0.8rem;
+}
+
+.table-base tbody tr:last-child {
+    border-bottom: 0.3rem solid var(--main-bg-color);
+}
+
+.table-base caption {
+    margin-bottom: 0.5rem;
+    font-size: calc(var(--base-txt-size) * 1.5);
+    /*width: fit-content;
+    background: var(--minor2-bg-color);
+    border-radius: 0.5rem;*/
+    padding: 0.25rem .5rem;
+}

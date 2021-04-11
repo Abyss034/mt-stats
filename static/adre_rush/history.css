@@ -1,0 +1,29 @@
+
+body::after {
+    filter: sepia(100%);
+}
+
+    
+section {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--minor2-bg-color);
+    width: 80rem;
+    height: fit-content;
+    border-radius: 1rem;
+    padding: 1rem 2.5rem 0 2.5rem;
+    gap: 2rem;
+}
+
+
+section .source {
+    margin-left: auto;
+    /*width: fit-content;
+    background: var(--minor2-bg-color);
+    border-radius: 0.5rem;
+    padding: 0.25rem .5rem;*/
+}
+
+.record thead th:nth-child(1) {
+    width: 15rem;
+}
