@@ -1,0 +1,20 @@
+
+section .stat {    
+    border-radius: 0.5rem;
+    padding: 0.25rem .5rem;
+}
+
+.stat h1 {
+    font-size: calc(var(--base-txt-size) * 1.5);
+    font-weight: normal;
+    margin: 0.5rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.stat p {
+    margin: 0.25rem;
+}
+
+
+

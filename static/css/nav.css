@@ -15,7 +15,6 @@ main nav ul {
 }
 
 main li a {
-    --container-size: 8rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,10 +25,13 @@ main li a {
     text-align: center;
 }
 
-aside {
-    position: sticky;
-    bottom: 0;
-    margin-top: auto;
+.sub-nav {
+    margin: 0 auto;
+    font-size: calc(var(--base-txt-size) * 1.2);
+    background-color: var(--minor2-bg-color);
+    height: calc(var(--container-size)/ 2);
+    width: calc(var(--container-size) * 2.9);
+    border-radius: calc(var(--container-height) / 2);
 }
 
 

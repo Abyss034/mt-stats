@@ -19,6 +19,7 @@
     --base-txt-size: 1.6rem;
     --container-width: 75%;
     --container-height: 9.2rem;
+    --container-size: 8rem;  /*sub menu size*/
     --male-color: #32A9AF;  /*bleu*/
     --female-color: #E63CE6;  /*rose*/
 }
@@ -46,7 +47,6 @@ body {
 
 a{
 	text-decoration: none;
-	/*text-transform: capitalize;*/
 	color: inherit;
 	cursor: pointer;
 }
@@ -57,7 +57,7 @@ ul {
 
 body::after {
     content: "";
-    background-image: url(image/harold-jonker-unsplash.jpg);
+    background-image: url(../image/harold-jonker-unsplash.jpg);
 	background-size: cover;
 	background-color: var(--main-bg-color);
 	background-position: top center;
@@ -67,6 +67,10 @@ body::after {
     top: 0;
     left: 0;
 	z-index: -10;
+}
+
+.bg-sepia::after {
+    filter: sepia(100%);
 }
 
 main {
@@ -160,8 +164,14 @@ footer p {
     border-bottom-left-radius: initial;
 }
 
-.active-link {
+.active-link, .link-hover:hover {
     color: var(--main-bg-color);
+}
+
+.aside-return-icon {
+    position: sticky;
+    bottom: 2.5rem;
+    margin-top: auto;
 }
 
 .return-icon {
@@ -176,79 +186,5 @@ footer p {
     font-weight: bold;
 }
 
-.link-hover:hover {
-    color: var(--main-bg-color);
-}
-
-.sub-nav {
-    margin: 0 auto;
-    font-size: calc(var(--base-txt-size) * 1.2);
-    background-color: var(--minor2-bg-color);
-    height: calc(var(--container-size)/ 2);
-    width: calc(var(--container-size) * 2.5);
-    border-radius: calc(var(--container-height) / 2);
-}
-
-.inactif-text {
-    opacity: 0.7;
-}
-
-.male {
-    color: var(--male-color);
-}
-    
-.female {
-    color: var(--female-color);
-}
-
-table .th-sort {
-	cursor: pointer;
-}
-
-table .th-sort-asc::after {
-  content: "\25b4";
-}
-
-table .th-sort-desc::after {
-  content: "\25be";
-}
-
-table .th-sort-asc::after,
-table .th-sort-desc::after {
-  margin-left: .5rem;
-}
-
-table .th-sort-asc,
-table .th-sort-desc {
-  background: rgba(0, 0, 0, 0.1);
-}
-
-.table-th-athlete {
-    min-width: 25rem;
-}
-
-.table-th-epreuve {
-    min-width: 15rem;
-}
-
-.table-th-club {
-    min-width: 23rem;
-}
-
-.table-th-pos {
-    min-width: 3rem;
-}
-
-.table-th-pays {
-    min-width: 17rem;
-}
-
-.left {
-    text-align: left;
-}
-
-.right {
-    text-align: right;
-}
 
 

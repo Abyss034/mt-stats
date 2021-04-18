@@ -1,0 +1,156 @@
+
+
+.table-section {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--minor2-bg-color);
+    height: fit-content;
+    border-radius: 1rem;
+    padding: 1rem 2.5rem 0.5rem 2.5rem;
+    gap: 2rem;
+}
+
+.table-base {
+    border-collapse: collapse;
+    background-color: var(--minor2-bg-color);
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    box-shadow: .1rem .1rem .3rem .2rem var(--main-txt-color);
+}
+
+.table-base thead th {
+    background-color: var(--main-bg-color);
+}
+
+.table-base thead tr {
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    color: #FFFFFF;
+}
+
+.table-base tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.table-base th, .table-base td {
+    padding: 0.25rem;
+    border-bottom: 0.1rem solid #ccc;
+    border-left: 0.1rem solid #ccc;
+    border-right: 0.1rem solid #ccc;
+}
+
+.table-base thead th {
+    text-align: center;
+}
+
+.table-base thead th:first-child {
+    border-top-left-radius: 0.8rem;
+}
+
+.table-base thead th:last-child {
+    border-top-right-radius: 0.8rem;
+}
+
+.table-base tbody tr:last-child {
+    border-bottom: 0.3rem solid var(--main-bg-color);
+}
+
+/* table title */
+.table-base caption {
+    margin-bottom: 0.5rem;
+    font-size: calc(var(--base-txt-size) * 1.5);
+    padding: 0.25rem .5rem;
+}
+
+/* table legend or source info class */
+.table-legend {
+    margin-left: auto;
+    width: fit-content;
+    padding: 0.25rem .5rem;
+}
+
+/* sticky header class for big table */
+.sticky-header thead th {
+    position: sticky;
+    z-index: 10;
+    top: 0;
+}
+
+/*  sort table class  */
+
+table .th-sort {
+	cursor: pointer;
+}
+
+table .th-sort-asc::after {
+  content: "\25b4";
+}
+
+table .th-sort-desc::after {
+  content: "\25be";
+}
+
+table .th-sort-asc::after,
+table .th-sort-desc::after {
+  margin-left: .5rem;
+}
+
+/* th commun width class  */
+.table-th-athlete {
+    min-width: 25rem;
+}
+
+.table-th-epreuve {
+    min-width: 15rem;
+}
+
+.table-th-club {
+    min-width: 31rem;
+}
+
+.table-th-pos {
+    min-width: 3rem;
+}
+
+.table-th-date {
+    min-width: 8rem;
+}
+
+.table-th-pays {
+    min-width: 17rem;
+}
+
+/* text alig in table cell */
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+/* text transform and color class */
+.male {
+    color: var(--male-color);
+}
+    
+.female {
+    color: var(--female-color);
+}
+
+.inactif-text span {
+    opacity: 0.7;
+    filter: grayscale(50%);
+}
+.inactif-text img {
+    opacity: 0.7;
+}
+
+
+
+
+

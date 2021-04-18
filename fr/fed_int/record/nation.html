@@ -13,15 +13,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Statithlon - fed_int.record_view</title>
+    <title>Statithlon - Fédération Internationale</title>
     <link rel="shortcut icon" type="image/png" href="/mt-stats/static/image/favicon.png">
-    <link rel="stylesheet" type="text/css" href="/mt-stats/static/base.css">
-    <link rel="stylesheet" type="text/css" href="/mt-stats/static/fed_int/index.css">
-    <link rel="stylesheet" type="text/css" href="/mt-stats/static/flags.css">
+    <link rel="stylesheet" type="text/css" href="/mt-stats/static/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/mt-stats/static/css/nav.css">
+    <link rel="stylesheet" type="text/css" href="/mt-stats/static/css/flags.css">
 
-    <link rel="stylesheet" type="text/css" href="/mt-stats/static/fed_int/club.css">
+    <link rel="stylesheet" type="text/css" href="/mt-stats/static/css/fed_int/club.css">
+    <link rel="stylesheet" type="text/css" href="/mt-stats/static/css/table.css">
 </head>
-  <body>
+  <body class="bg-sepia">
     <header class="track-border">
       <nav>
         <ul>
@@ -35,129 +36,139 @@
     <main>
       <nav>
         <ul>
-          <li><a class="track-border track-border-cut link-hover active-link" href=/mt-stats/fr/fed_int/record.html>Record</a></li>
-            <li><a class="sub-nav link-hover" href=/mt-stats/fr/fed_int/record/club.html>Par club</a></li>
-              <li><a class="sub-nav link-hover active-link" href=/mt-stats/fr/fed_int/record/nation.html>Par nationalité d&#39;athlète</a></li>
-              </ul>
+            <li>
+  <a class="track-border track-border-cut link-hover active-link" href=/mt-stats/fr/fed_int/record.html>Record</a>
+  </li>
+  <li>
+        <a class="sub-nav link-hover" href=/mt-stats/fr/fed_int/record/club.html>Par club</a>
+      </li>
+    <li>
+        <a class="sub-nav link-hover" href=/mt-stats/fr/fed_int/record/nation.html>Par nationalité d&#39;athlète</a>
+      </li>
+    
+        </ul>
       </nav>
-      <section>
-        <table>
-          <caption class="nation">Nombre de records par Pays</caption>
+      <section class="table-section">
+        <table class="table-base sticky-header">
+          <caption>Nombre de records par Pays</caption>
           <thead>
             <tr>
-              <th class="table-th-pos">-</th><th class="table-th-pays">Pays</th><th class="th-sort th-sort-asc">Nombre</th><th class="th-sort">Récompense</th>
+              <th class="table-th-pos"><span>-</span></th><th class="table-th-pays"><span>Pays</span></th><th class="th-sort th-sort-asc"><span>Nombre</span></th><th class="th-sort"><span>Récompense</span></th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <th class="right">1</th>
-              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-it" alt="country flag it">Italia</td>
-              <td>16</td>
-              <td>10342000</td>
+              <th class="right"><span>1</span></th>
+              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-it" alt="country flag it"><span>Italia</span></td>
+              <td class="right"><span>16</span></td>
+              <td class="right"><span>10342000</span></td>
             </tr>
             <tr>
-              <th class="right">2</th>
-              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-de" alt="country flag de">Deutschland</td>
-              <td>7</td>
-              <td>4126500</td>
+              <th class="right"><span>2</span></th>
+              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-de" alt="country flag de"><span>Deutschland</span></td>
+              <td class="right"><span>7</span></td>
+              <td class="right"><span>4126500</span></td>
             </tr>
             <tr>
-              <th class="right">=</th>
-              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-es" alt="country flag es">España</td>
-              <td>7</td>
-              <td>2954000</td>
+              <th class="right"><span>=</span></th>
+              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-es" alt="country flag es"><span>España</span></td>
+              <td class="right"><span>7</span></td>
+              <td class="right"><span>2954000</span></td>
             </tr>
             <tr>
-              <th class="right">4</th>
-              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-gr" alt="country flag gr">Hellas</td>
-              <td>3</td>
-              <td>1200000</td>
+              <th class="right"><span>4</span></th>
+              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-gr" alt="country flag gr"><span>Hellas</span></td>
+              <td class="right"><span>3</span></td>
+              <td class="right"><span>1200000</span></td>
             </tr>
             <tr>
-              <th class="right">=</th>
-              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-fr" alt="country flag fr">France</td>
-              <td>3</td>
-              <td>911000</td>
+              <th class="right"><span>=</span></th>
+              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-fr" alt="country flag fr"><span>France</span></td>
+              <td class="right"><span>3</span></td>
+              <td class="right"><span>911000</span></td>
             </tr>
             <tr>
-              <th class="right">6</th>
-              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-br" alt="country flag br">Brasil</td>
-              <td>2</td>
-              <td>1702500</td>
+              <th class="right"><span>6</span></th>
+              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-br" alt="country flag br"><span>Brasil</span></td>
+              <td class="right"><span>2</span></td>
+              <td class="right"><span>1702500</span></td>
             </tr>
             <tr>
-              <th class="right">=</th>
-              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-cz" alt="country flag cz">Česká republika</td>
-              <td>2</td>
-              <td>984000</td>
+              <th class="right"><span>=</span></th>
+              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-cz" alt="country flag cz"><span>Česká republika</span></td>
+              <td class="right"><span>2</span></td>
+              <td class="right"><span>984000</span></td>
             </tr>
             <tr>
-              <th class="right">=</th>
-              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-pt" alt="country flag pt">Portugal</td>
-              <td>2</td>
-              <td>859500</td>
+              <th class="right"><span>=</span></th>
+              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-pt" alt="country flag pt"><span>Portugal</span></td>
+              <td class="right"><span>2</span></td>
+              <td class="right"><span>859500</span></td>
             </tr>
             <tr>
-              <th class="right">=</th>
-              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-ie" alt="country flag ie">Ireland</td>
-              <td>2</td>
-              <td>849000</td>
+              <th class="right"><span>=</span></th>
+              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-ie" alt="country flag ie"><span>Ireland</span></td>
+              <td class="right"><span>2</span></td>
+              <td class="right"><span>849000</span></td>
             </tr>
             <tr>
-              <th class="right">10</th>
-              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-pl" alt="country flag pl">Polska</td>
-              <td>1</td>
-              <td>788500</td>
+              <th class="right"><span>10</span></th>
+              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-pl" alt="country flag pl"><span>Polska</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>788500</span></td>
             </tr>
             <tr>
-              <th class="right">=</th>
-              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-mx" alt="country flag mx">México</td>
-              <td>1</td>
-              <td>554000</td>
+              <th class="right"><span>=</span></th>
+              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-mx" alt="country flag mx"><span>México</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>554000</span></td>
             </tr>
             <tr>
-              <th class="right">=</th>
-              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-gb" alt="country flag gb">Great Britain</td>
-              <td>1</td>
-              <td>470000</td>
+              <th class="right"><span>=</span></th>
+              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-gb" alt="country flag gb"><span>Great Britain</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>470000</span></td>
             </tr>
             <tr>
-              <th class="right">=</th>
-              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-ua" alt="country flag ua">Ukrajina</td>
-              <td>1</td>
-              <td>410500</td>
+              <th class="right"><span>=</span></th>
+              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-ua" alt="country flag ua"><span>Ukrajina</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>410500</span></td>
             </tr>
             <tr>
-              <th class="right">=</th>
-              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-dk" alt="country flag dk">Danmark</td>
-              <td>1</td>
-              <td>340500</td>
+              <th class="right"><span>=</span></th>
+              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-dk" alt="country flag dk"><span>Danmark</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>340500</span></td>
             </tr>
             <tr>
-              <th class="right">=</th>
-              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-cn" alt="country flag cn">China</td>
-              <td>1</td>
-              <td>330000</td>
+              <th class="right"><span>=</span></th>
+              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-cn" alt="country flag cn"><span>China</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>330000</span></td>
             </tr>
             <tr>
-              <th class="right">=</th>
-              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-nl" alt="country flag nl">Nederland</td>
-              <td>1</td>
-              <td>165500</td>
+              <th class="right"><span>=</span></th>
+              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-nl" alt="country flag nl"><span>Nederland</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>165500</span></td>
             </tr>
             <tr>
-              <th class="right">=</th>
-              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-be" alt="country flag be">België</td>
-              <td>1</td>
-              <td>67500</td>
+              <th class="right"><span>=</span></th>
+              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-be" alt="country flag be"><span>België</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>67500</span></td>
             </tr>
           </tbody>
         </table>
-        <p>Source de données: Saison 78</p>
+        <div>
+          <p class="table-legend">&#34;Récompense&#34;: somme des récompenses actuelle pour les records détenu</p>
+          <p class="table-legend">Source de données: Saison 78</p>
+        </div>
       </section>
-      <aside>
+      <aside class="aside-return-icon">
           <a href="#" class="return-icon">&#8743</a>
-      <aside>
+      </aside>
     </main>
     <footer class="track-border">
       <a class="maxithlon-link" href="https://www.maxithlon.com" target="_blank"><img src="https://www.maxithlon.com/common/images/esterne/maxithlon_mb.gif"  alt="Maxithlon" border="0"></a>

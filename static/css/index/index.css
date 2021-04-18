@@ -24,7 +24,6 @@ main ul {
 }
 
 main li a {
-    --container-size: 8rem;
     display: flex;
     justify-content: center;
     align-items: center;

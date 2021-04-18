@@ -1,0 +1,11 @@
+
+section {
+    width: 80rem;
+}
+
+.record thead th:nth-child(1) {
+    width: 15rem;
+}
+
+
+

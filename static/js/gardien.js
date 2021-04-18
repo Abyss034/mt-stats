@@ -27,14 +27,8 @@ function calcule()
     var guardcoast = guardbuycoast + guardweekscoast
     if (lang == 'fr') {
         var msg = "Nombre de gardiens: " + guard + "\nAchat initial: " + guardbuycoast + "€\nSalaires total: " + guardweekscoast + "€"
-        if (guardcoast > repa) {
-            msg += "\nATTENTION\nle coût de reparation est moins cher!"
-        }
     } else {
         var msg = "Number of groundsmen: " + guard + "\nInitial purchase: " + guardbuycoast + "$\nTotal wages: " + guardweekscoast + "$"
-        if (guardcoast > repa) {
-            msg += "\nWARNING\nthe repair cost is cheaper!"
-        }
     }
     alert(msg);
 }

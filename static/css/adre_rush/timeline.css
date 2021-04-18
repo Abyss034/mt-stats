@@ -1,8 +1,4 @@
 
-body::after {
-    filter: sepia(100%);
-}
-
 section {
     width: 70%;
 }
@@ -71,6 +67,7 @@ section {
         order: 3;
     }
 }
+
 
 
 

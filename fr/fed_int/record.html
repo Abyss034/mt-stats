@@ -13,15 +13,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Statithlon - fed_int.record_view</title>
+    <title>Statithlon - Fédération Internationale</title>
     <link rel="shortcut icon" type="image/png" href="/mt-stats/static/image/favicon.png">
-    <link rel="stylesheet" type="text/css" href="/mt-stats/static/base.css">
-    <link rel="stylesheet" type="text/css" href="/mt-stats/static/fed_int/index.css">
-    <link rel="stylesheet" type="text/css" href="/mt-stats/static/flags.css">
+    <link rel="stylesheet" type="text/css" href="/mt-stats/static/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/mt-stats/static/css/nav.css">
+    <link rel="stylesheet" type="text/css" href="/mt-stats/static/css/flags.css">
 
-    <link rel="stylesheet" type="text/css" href="/mt-stats/static/fed_int/record.css">
+    <link rel="stylesheet" type="text/css" href="/mt-stats/static/css/fed_int/record.css">
+    <link rel="stylesheet" type="text/css" href="/mt-stats/static/css/table.css">
 </head>
-  <body>
+  <body class="bg-sepia">
     <header class="track-border">
       <nav>
         <ul>
@@ -35,90 +36,96 @@
     <main>
       <nav>
         <ul>
-          <li><a class="track-border track-border-cut link-hover active-link" href=/mt-stats/fr/fed_int/record.html>Record</a></li>
-            <li><a class="sub-nav link-hover" href=/mt-stats/fr/fed_int/record/club.html>Par club</a></li>
-              <li><a class="sub-nav link-hover" href=/mt-stats/fr/fed_int/record/nation.html>Par nationalité d&#39;athlète</a></li>
-              </ul>
+            <li>
+  <a class="track-border track-border-cut link-hover active-link" href=/mt-stats/fr/fed_int/record.html>Record</a>
+  </li>
+  <li>
+        <a class="sub-nav link-hover" href=/mt-stats/fr/fed_int/record/club.html>Par club</a>
+      </li>
+    <li>
+        <a class="sub-nav link-hover" href=/mt-stats/fr/fed_int/record/nation.html>Par nationalité d&#39;athlète</a>
+      </li>
+    
+        </ul>
       </nav>
-      <section>
+      <section class="table-section">
         <div class="stat">
           <h1>Statistique records du Monde</h1>
           <p>nombre de record du monde: 52</p>
           <p>nombres d&#39;athletes: 48 dont 27 inactif</p>
           <p>nombres de clubs: 29 dont 1 inactif</p>
           </div>
-        <table>
-          <caption>Record le plus ancien</caption>
-          <thead>
-            <tr>
-              <th class="table-th-epreuve">Épreuve</th><th class="table-th-athlete">Athlète</th><th>Performance</th><th>Date</th><th class="table-th-club">Club</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th class="left">400 m haies</th>
-              <td class="inactif-text female left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-de" alt="country flag de">Friede Ulla</td>
-              <td class="right"><a href="https://www.maxithlon.com/manifestazioni/man_dettagli.php?m=436704" target="_blank">58.65<a></td>
-              <td class="right">25-02-15</td>
-              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-de" alt="country flag de"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=26959" target="_blank">MotorGelbforst<a></td>
-            </tr>
-            <tr>
-              <th class="left">Marteau</th>
-              <td class="inactif-text female left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-it" alt="country flag it">Maccabruni Viola</td>
-              <td class="right"><a href="https://www.maxithlon.com/manifestazioni/man_dettagli.php?m=436704" target="_blank">73.48<a></td>
-              <td class="right">25-02-15</td>
-              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-it" alt="country flag it"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=32600" target="_blank">Miogni Athletic Club<a></td>
-            </tr>
-          </tbody>
-        </table>
-        <table>
+        <table class="table-base">
           <caption>Records de la dernière saison 78</caption>
           <thead>
             <tr>
-              <th class="table-th-epreuve">Épreuve</th><th class="table-th-athlete">Athlète</th><th>Performance</th><th>Date</th><th class="table-th-club">Club</th>
+              <th class="table-th-epreuve"><span>Épreuve</span></th><th class="table-th-athlete"><span>Athlète</span></th><th><span>Performance</span></th><th class="table-th-date"><span>Date</span></th><th class="table-th-club"><span>Club</span></th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <th class="left">Déca/Heptathlon</th>
-              <td class="actif-text female left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-es" alt="country flag es"><a href="https://www.maxithlon.com/user/atleta_one.php?tipo=aid&amp;aid=4293950" target="_blank">Sarrión Norma<a></td>
-              <td class="right"><a href="https://www.maxithlon.com/manifestazioni/man_dettagli.php?m=792603" target="_blank">7102<a></td>
-              <td class="right">10-02-21</td>
-              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-ch" alt="country flag ch"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=86514" target="_blank">Sporting Olomouc<a></td>
+              <th class="left"><span>Déca/Heptathlon</span></th>
+              <td class="actif-text female left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-es" alt="country flag es"><a href="https://www.maxithlon.com/user/atleta_one.php?tipo=aid&amp;aid=4293950" target="_blank"><span>Sarrión Norma</span><a></td>
+              <td class="right"><a href="https://www.maxithlon.com/manifestazioni/man_dettagli.php?m=792603" target="_blank"><span>7102</span><a></td>
+              <td class="right"><span>10-02-21</span></td>
+              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-ch" alt="country flag ch"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=86514" target="_blank"><span>Sporting Olomouc</span><a></td>
             </tr>
           </tbody>
         </table>
-        <table class="record-last-table">
+        <table class="table-base record-last-table">
           <caption>Athlètes avec plusieurs records</caption>
           <thead>
             <tr>
-              <th class="table-th-athlete">Athlète</th><th>Liste des épreuves</th>
+              <th class="table-th-athlete"><span>Athlète</span></th><th><span>Liste des épreuves</span></th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class="inactif-text male left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-es" alt="country flag es"><a href="https://www.maxithlon.com/user/atleta_one.php?tipo=aid&amp;aid=3472812" target="_blank">Ibarz Luis Alberto<a></td>
-              <td class="left">800 mètres, 3000 m steeple</td>
+              <td class="inactif-text male left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-es" alt="country flag es"><a href="https://www.maxithlon.com/user/atleta_one.php?tipo=aid&amp;aid=3472812" target="_blank"><span>Ibarz Luis Alberto</span><a></td>
+              <td class="left"><span>800 mètres, 3000 m steeple</span></td>
             </tr>
             <tr>
-              <td class="actif-text male left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-it" alt="country flag it"><a href="https://www.maxithlon.com/user/atleta_one.php?tipo=aid&amp;aid=3817854" target="_blank">Cavazzin Gerardo<a></td>
-              <td class="left">5000 mètres, 10000 mètres</td>
+              <td class="actif-text male left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-it" alt="country flag it"><a href="https://www.maxithlon.com/user/atleta_one.php?tipo=aid&amp;aid=3817854" target="_blank"><span>Cavazzin Gerardo</span><a></td>
+              <td class="left"><span>5000 mètres, 10000 mètres</span></td>
             </tr>
             <tr>
-              <td class="actif-text female left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-it" alt="country flag it"><a href="https://www.maxithlon.com/user/atleta_one.php?tipo=aid&amp;aid=3815164" target="_blank">Oldani Giuseppina<a></td>
-              <td class="left">5000 mètres, 10000 mètres</td>
+              <td class="actif-text female left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-it" alt="country flag it"><a href="https://www.maxithlon.com/user/atleta_one.php?tipo=aid&amp;aid=3815164" target="_blank"><span>Oldani Giuseppina</span><a></td>
+              <td class="left"><span>5000 mètres, 10000 mètres</span></td>
             </tr>
             <tr>
-              <td class="inactif-text female left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-it" alt="country flag it"><a href="https://www.maxithlon.com/user/atleta_one.php?tipo=aid&amp;aid=3216612" target="_blank">Fachin Diletta<a></td>
-              <td class="left">10km marche, 50km marche</td>
+              <td class="inactif-text female left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-it" alt="country flag it"><a href="https://www.maxithlon.com/user/atleta_one.php?tipo=aid&amp;aid=3216612" target="_blank"><span>Fachin Diletta</span><a></td>
+              <td class="left"><span>10km marche, 50km marche</span></td>
             </tr>
           </tbody>
         </table>
-        <p class="source">Source de données: Saison 78</p>
+        <table class="table-base">
+          <caption>Record le plus ancien</caption>
+          <thead>
+            <tr>
+              <th class="table-th-epreuve"><span>Épreuve</span></th><th class="table-th-athlete"><span>Athlète</span></th><th><span>Performance</span></th><th class="table-th-date"><span>Date</span></th><th class="table-th-club"><span>Club</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="left"><span>400 m haies</span></th>
+              <td class="inactif-text female left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-de" alt="country flag de"><span>Friede Ulla</span></td>
+              <td class="right"><a href="https://www.maxithlon.com/manifestazioni/man_dettagli.php?m=436704" target="_blank"><span>58.65</span><a></td>
+              <td class="right"><span>25-02-15</span></td>
+              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-de" alt="country flag de"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=26959" target="_blank"><span>MotorGelbforst</span><a></td>
+            </tr>
+            <tr>
+              <th class="left"><span>Marteau</span></th>
+              <td class="inactif-text female left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-it" alt="country flag it"><span>Maccabruni Viola</span></td>
+              <td class="right"><a href="https://www.maxithlon.com/manifestazioni/man_dettagli.php?m=436704" target="_blank"><span>73.48</span><a></td>
+              <td class="right"><span>25-02-15</span></td>
+              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-it" alt="country flag it"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=32600" target="_blank"><span>Miogni Athletic Club</span><a></td>
+            </tr>
+          </tbody>
+        </table>
+        <div>
+          <p class="table-legend">Source de données: Saison 78</p>
+        </div>
       </section>
-      <aside>
-          <a href="#" class="return-icon">&#8743</a>
-      <aside>
     </main>
     <footer class="track-border">
       <a class="maxithlon-link" href="https://www.maxithlon.com" target="_blank"><img src="https://www.maxithlon.com/common/images/esterne/maxithlon_mb.gif"  alt="Maxithlon" border="0"></a>

@@ -13,15 +13,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Statithlon - fed_fra.record_view</title>
+    <title>Statithlon - France Federation</title>
     <link rel="shortcut icon" type="image/png" href="/mt-stats/static/image/favicon.png">
-    <link rel="stylesheet" type="text/css" href="/mt-stats/static/base.css">
-    <link rel="stylesheet" type="text/css" href="/mt-stats/static/fed_fra/index.css">
-    <link rel="stylesheet" type="text/css" href="/mt-stats/static/flags.css">
+    <link rel="stylesheet" type="text/css" href="/mt-stats/static/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/mt-stats/static/css/nav.css">
+    <link rel="stylesheet" type="text/css" href="/mt-stats/static/css/flags.css">
 
-    <link rel="stylesheet" type="text/css" href="/mt-stats/static/fed_fra/club.css">
+    <link rel="stylesheet" type="text/css" href="/mt-stats/static/css/fed_fra/club.css">
+    <link rel="stylesheet" type="text/css" href="/mt-stats/static/css/table.css">
 </head>
-  <body>
+  <body class="bg-sepia">
     <header class="track-border">
       <nav>
         <ul>
@@ -35,52 +36,61 @@
     <main>
       <nav>
         <ul>
-          <li><a class="track-border track-border-cut link-hover active-link" href=/mt-stats/en/fed_fra/record.html>Record</a></li>
-            <li><a class="sub-nav link-hover" href=/mt-stats/en/fed_fra/record/club.html>By club</a></li>
-              <li><a class="sub-nav link-hover active-link" href=/mt-stats/en/fed_fra/record/nation.html>by club nationality</a></li>
-              </ul>
+          <li>
+  <a class="track-border track-border-cut link-hover active-link" href=/mt-stats/en/fed_fra/record.html>Record</a>
+  </li>
+  <li>
+        <a class="sub-nav link-hover" href=/mt-stats/en/fed_fra/record/club.html>By club</a>
+      </li>
+    <li>
+        <a class="sub-nav link-hover" href=/mt-stats/en/fed_fra/record/nation.html>by club nationality</a>
+      </li>
+    
+        </ul>
       </nav>
-      <section>
-        <table>
-          <caption class="nation">Number of records per Nation</caption>
+      <section class="table-section nation">
+        <table class="table-base sticky-header">
+          <caption>Number of records per Nation</caption>
           <thead>
             <tr>
-              <th class="table-th-pos">-</th><th class="table-th-pays">Nation</th><th>Number</th>
+              <th class="table-th-pos"><span>-</span></th><th class="table-th-pays"><span>Nation</span></th><th><span>Number</span></th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <th class="right">1</th>
-              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-fr" alt="country flag fr">France</td>
-              <td>42</td>
+              <th class="right"><span>1</span></th>
+              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-fr" alt="country flag fr"><span>France</span></td>
+              <td class="right"><span>42</span></td>
             </tr>
             <tr>
-              <th class="right">2</th>
-              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-it" alt="country flag it">Italia</td>
-              <td>5</td>
+              <th class="right"><span>2</span></th>
+              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-it" alt="country flag it"><span>Italia</span></td>
+              <td class="right"><span>5</span></td>
             </tr>
             <tr>
-              <th class="right">3</th>
-              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-es" alt="country flag es">España</td>
-              <td>3</td>
+              <th class="right"><span>3</span></th>
+              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-es" alt="country flag es"><span>España</span></td>
+              <td class="right"><span>3</span></td>
             </tr>
             <tr>
-              <th class="right">4</th>
-              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-se" alt="country flag se">Sverige</td>
-              <td>1</td>
+              <th class="right"><span>4</span></th>
+              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-se" alt="country flag se"><span>Sverige</span></td>
+              <td class="right"><span>1</span></td>
             </tr>
             <tr>
-              <th class="right">=</th>
-              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-de" alt="country flag de">Deutschland</td>
-              <td>1</td>
+              <th class="right"><span>=</span></th>
+              <td class="left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-de" alt="country flag de"><span>Deutschland</span></td>
+              <td class="right"><span>1</span></td>
             </tr>
           </tbody>
         </table>
-        <p>Data source: Season 78</p>
+        <div>
+          <p class="table-legend">Data source: Season 78</p>
+        </div>
       </section>
-      <aside>
+      <aside class="aside-return-icon">
           <a href="#" class="return-icon">&#8743</a>
-      <aside>
+      </aside>
     </main>
     <footer class="track-border">
       <a class="maxithlon-link" href="https://www.maxithlon.com" target="_blank"><img src="https://www.maxithlon.com/common/images/esterne/maxithlon_mb.gif"  alt="Maxithlon" border="0"></a>

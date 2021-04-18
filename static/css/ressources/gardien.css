@@ -1,9 +1,4 @@
 
-body::after {
-    filter: sepia(100%);
-}
-
-
 section {
     display: flex;
     flex-direction: column;
@@ -13,7 +8,6 @@ section {
 .box {
     background: var(--minor2-bg-color);
     border-radius: 0.5rem;
-    box-shadow: 0.1rem 0.1rem 0.3rem 0.2rem var(--main-txt-color);
     padding: 2.5rem;
 }
 
