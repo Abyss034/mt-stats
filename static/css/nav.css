@@ -29,7 +29,7 @@ main li a {
     margin: 0 auto;
     font-size: calc(var(--base-txt-size) * 1.2);
     background-color: var(--minor2-bg-color);
-    height: calc(var(--container-size)/ 2);
+    height: calc(var(--container-size)/ 1.5);
     width: calc(var(--container-size) * 2.9);
     border-radius: calc(var(--container-height) / 2);
 }

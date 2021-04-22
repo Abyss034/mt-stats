@@ -18,6 +18,10 @@
     box-shadow: .1rem .1rem .3rem .2rem var(--main-txt-color);
 }
 
+.table-base td {
+    white-space: nowrap;
+}
+
 .table-base thead th {
     background-color: var(--main-bg-color);
 }
@@ -76,6 +80,14 @@
     top: 0;
 }
 
+.tr-hover tr:hover {
+    font-weight: bolder;
+}
+
+.bolder-first tbody tr:first-child td {
+    font-weight: bolder;
+}
+
 /*  sort table class  */
 
 table .th-sort {
@@ -105,7 +117,7 @@ table .th-sort-desc::after {
 }
 
 .table-th-club {
-    min-width: 31rem;
+    min-width: 32rem;
 }
 
 .table-th-pos {
@@ -118,6 +130,10 @@ table .th-sort-desc::after {
 
 .table-th-pays {
     min-width: 17rem;
+}
+
+.table-th-medal {
+    min-width: 12rem;
 }
 
 /* text alig in table cell */
