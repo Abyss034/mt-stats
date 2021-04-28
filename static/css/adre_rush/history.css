@@ -1,6 +1,6 @@
 
 section {
-    width: 80rem;
+    width: fit-content;
 }
 
 .record thead th:nth-child(1) {

@@ -117,11 +117,11 @@ table .th-sort-desc::after {
 }
 
 .table-th-club {
-    min-width: 32rem;
+    min-width: 33rem;
 }
 
 .table-th-pos {
-    min-width: 3rem;
+    min-width: 3.5rem;
 }
 
 .table-th-date {
@@ -156,6 +156,22 @@ table .th-sort-desc::after {
     
 .female {
     color: var(--female-color);
+}
+
+.green {
+    color: green;
+}
+    
+.red {
+    color: red;
+}
+
+.little {
+    font-size: calc(var(--base-txt-size) * .7);
+}
+
+.underline {
+    text-decoration: underline;
 }
 
 .inactif-text span {
