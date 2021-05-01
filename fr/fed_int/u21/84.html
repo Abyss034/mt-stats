@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang=fr>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-583QMBXHXP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-583QMBXHXP');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Statithlon - Fédération Internationale</title>
+    <link rel="shortcut icon" type="image/png" href="/mt-stats/static/image/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/mt-stats/static/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/mt-stats/static/css/nav.css">
+    <link rel="stylesheet" type="text/css" href="/mt-stats/static/css/flags.css">
+
+    <link rel="stylesheet" type="text/css" href="/mt-stats/static/css/fed_int/individuel.css">
+    <link rel="stylesheet" type="text/css" href="/mt-stats/static/css/table.css">
+</head>
+  <body class="bg-sepia">
+    <header class="track-border">
+      <nav>
+        <ul>
+          <li><a class="link-hover" href=/mt-stats/fr/index.html>Accueil</a></li>
+          <li><a class="link-hover active-link" href=/mt-stats/fr/fed_int/index.html>Fédération Internationale</a></li>
+          <li><a class="link-hover" href=/mt-stats/fr/fed_fra/index.html>Fédération France</a></li>
+          <li><a class="link-hover" href=/mt-stats/fr/ressources/index.html>Ressources</a></li>
+          </ul>
+      </nav>
+    </header>
+    <main>
+      <nav>
+        <ul>
+            <li>
+  
+  <a class="track-border track-border-cut link-hover" href=/mt-stats/fr/fed_int/individuel/67.html>Individuels</a>
+  
+  </li>
+  <li>
+  
+  <a class="track-border track-border-cut link-hover" href=/mt-stats/fr/fed_int/champions_cup/97.html>Champions Cup</a>
+  
+  </li>
+  <li>
+  
+  <a class="track-border track-border-cut link-hover" href=/mt-stats/fr/fed_int/junior/49.html>Juniors</a>
+  
+  </li>
+  <li>
+  
+  <a class="track-border track-border-cut link-hover active-link" href=/mt-stats/fr/fed_int/u21/52.html>U21</a>
+  
+  </li>
+  <li>
+         
+        <a class="sub-nav link-hover" href=/mt-stats/fr/fed_int/u21/u21_m/78.html>Mondiaux U21</a>
+        
+      </li>
+    <li>
+         
+        <a class="sub-nav link-hover" href=/mt-stats/fr/fed_int/u21/u21_ce/79.html>Continentaux U21</br> Europe</a>
+        
+      </li>
+    <li>
+         
+        <a class="sub-nav link-hover" href=/mt-stats/fr/fed_int/u21/u21_caa/79.html>Continentaux U21</br> Asie - Afrique - Pacifique</a>
+        
+      </li>
+    <li>
+         
+        <a class="sub-nav link-hover" href=/mt-stats/fr/fed_int/u21/u21_ca/79.html>Continentaux U21</br> Amérique</a>
+        
+      </li>
+    <li>
+  
+  <a class="track-border track-border-cut link-hover" href=/mt-stats/fr/fed_int/veteran/55.html>Vétérans</a>
+  
+  </li>
+  <li>
+  
+  <a class="track-border track-border-cut link-hover" href=/mt-stats/fr/fed_int/record.html>Record</a>
+  
+  </li>
+  
+        </ul>
+      </nav>
+      <section class="table-section">
+        <h1>Continentaux U21 Asie - Afrique - Pacifique</h1>        
+        <div>
+          <label>Choisir un classement:</label>
+          <select class="season" type="text" name="season" id="season">
+            <optgroup label="Mondiaux U21">
+              <option value=/mt-stats/fr/fed_int/u21/52.html>toutes saisons</option>
+              
+              <option value=/mt-stats/fr/fed_int/u21/53.html>5 dernières compétitions</option>
+              
+              <option value=/mt-stats/fr/fed_int/u21/54.html>classement général</option>
+              
+            
+            <optgroup label="Continentaux U21 Europe">
+              <option value=/mt-stats/fr/fed_int/u21/79.html>toutes saisons</option>
+              
+              <option value=/mt-stats/fr/fed_int/u21/80.html>5 dernières compétitions</option>
+              
+              <option value=/mt-stats/fr/fed_int/u21/81.html>classement général</option>
+              
+            
+            <optgroup label="Continentaux U21 Asie - Afrique - Pacifique">
+              <option value=/mt-stats/fr/fed_int/u21/82.html>toutes saisons</option>
+              
+              <option value=/mt-stats/fr/fed_int/u21/83.html>5 dernières compétitions</option>
+              
+              <option value=/mt-stats/fr/fed_int/u21/84.html selected>classement général</option>
+              
+            
+            <optgroup label="Continentaux U21 Amérique">
+              <option value=/mt-stats/fr/fed_int/u21/85.html>toutes saisons</option>
+              
+              <option value=/mt-stats/fr/fed_int/u21/86.html>5 dernières compétitions</option>
+              
+              <option value=/mt-stats/fr/fed_int/u21/87.html>classement général</option>
+              
+            
+          </select>
+        </div>
+        <table class="table-base sticky-header tr-hover bolder-first">
+          <thead>
+            <tr>
+              <th class="table-th-pos th-sort th-sort-desc"><span>-</span></th><th class="table-th-pos"><span>*</span></th><th class="table-th-club"><span>Club</span></th><th class="table-th-medal th-sort"><span>1er place</span></th><th class="table-th-medal th-sort"><span>Podium</span></th><th class="table-th-medal th-sort"><span>Top 5</span></th><th class="table-th-medal th-sort"><span>Participation</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="right"><span>1</span></td>
+              <td class="center little"><span>=</span></td>
+              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-id" alt="country flag id"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=58741" target="_blank"><span>Ragnar</span><a></td>
+              <td class="right"><span>5</span></td>
+              <td class="right"><span>13</span></td>
+              <td class="right"><span>15</span></td>
+              <td class="right"><span>21</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>2</span></td>
+              <td class="center little"><span>=</span></td>
+              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-vn" alt="country flag vn"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=86763" target="_blank"><span>CASABLANCA</span><a></td>
+              <td class="right"><span>3</span></td>
+              <td class="right"><span>5</span></td>
+              <td class="right"><span>7</span></td>
+              <td class="right"><span>9</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>3</span></td>
+              <td class="center little"><span>=</span></td>
+              <td class="inactif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-jp" alt="country flag jp"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=59930" target="_blank"><span>ASD T&F</span><a></td>
+              <td class="right"><span>2</span></td>
+              <td class="right"><span>5</span></td>
+              <td class="right"><span>7</span></td>
+              <td class="right"><span>18</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>4</span></td>
+              <td class="center little"><span>=</span></td>
+              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-it" alt="country flag it"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=22863" target="_blank"><span>ASD CorriCorri</span><a></td>
+              <td class="right"><span>2</span></td>
+              <td class="right"><span>3</span></td>
+              <td class="right"><span>3</span></td>
+              <td class="right"><span>9</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>5</span></td>
+              <td class="center little"><span>=</span></td>
+              <td class="inactif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-au" alt="country flag au"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=6921" target="_blank"><span>Antequera</span><a></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>3</span></td>
+              <td class="right"><span>5</span></td>
+              <td class="right"><span>10</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>6</span></td>
+              <td class="center little"><span>=</span></td>
+              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-fr" alt="country flag fr"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=46947" target="_blank"><span>Angel Team</span><a></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>3</span></td>
+              <td class="right"><span>4</span></td>
+              <td class="right"><span>13</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>7</span></td>
+              <td class="center little"><span>=</span></td>
+              <td class="inactif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-nz" alt="country flag nz"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=46262" target="_blank"><span>Black Kiwis</span><a></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>2</span></td>
+              <td class="right"><span>3</span></td>
+              <td class="right"><span>5</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>8</span></td>
+              <td class="center little"><span>=</span></td>
+              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-sg" alt="country flag sg"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=87356" target="_blank"><span>Singapore Red Oaks</span><a></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>2</span></td>
+              <td class="right"><span>2</span></td>
+              <td class="right"><span>2</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>9</span></td>
+              <td class="center little"><span>=</span></td>
+              <td class="inactif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-au" alt="country flag au"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=57465" target="_blank"><span>Darwin</span><a></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>3</span></td>
+              <td class="right"><span>9</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>9</span></td>
+              <td class="center little"><span>=</span></td>
+              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-dz" alt="country flag dz"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=85651" target="_blank"><span>Marrasos</span><a></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>3</span></td>
+              <td class="right"><span>5</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>11</span></td>
+              <td class="center little"><span>=</span></td>
+              <td class="inactif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-at" alt="country flag at"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=20843" target="_blank"><span>ASC Sprint</span><a></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>2</span></td>
+              <td class="right"><span>4</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>12</span></td>
+              <td class="center little"><span>=</span></td>
+              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-it" alt="country flag it"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=14174" target="_blank"><span>PoLLiCe VeRDe</span><a></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>13</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>12</span></td>
+              <td class="center little"><span>=</span></td>
+              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-de" alt="country flag de"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=46126" target="_blank"><span>Stuhr Cangaroos</span><a></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>7</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>14</span></td>
+              <td class="center little"><span>=</span></td>
+              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-be" alt="country flag be"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=14111" target="_blank"><span>AC MegaSpike</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>3</span></td>
+              <td class="right"><span>3</span></td>
+              <td class="right"><span>7</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>15</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="inactif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-ng" alt="country flag ng"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=80511" target="_blank"><span>Natty Dread Athletic Club</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>2</span></td>
+              <td class="right"><span>2</span></td>
+              <td class="right"><span>6</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>15</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="inactif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-jp" alt="country flag jp"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=75254" target="_blank"><span>Matsuyama United</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>2</span></td>
+              <td class="right"><span>2</span></td>
+              <td class="right"><span>2</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>17</span></td>
+              <td class="center little"><span>=</span></td>
+              <td class="inactif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-au" alt="country flag au"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=63107" target="_blank"><span>Canberra Raiders</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>2</span></td>
+              <td class="right"><span>9</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>17</span></td>
+              <td class="center green little"><span>+1</span></td>
+              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-it" alt="country flag it"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=77452" target="_blank"><span>Poststrutturalista Fallito</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>2</span></td>
+              <td class="right"><span>5</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>19</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-it" alt="country flag it"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=32573" target="_blank"><span>ATLETICO LEBOWSKI II</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>9</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>19</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-ie" alt="country flag ie"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=49572" target="_blank"><span>Ballyfin</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>7</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>19</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="inactif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-cn" alt="country flag cn"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=83553" target="_blank"><span>Master Shanghai</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>6</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>19</span></td>
+              <td class="center green little"><span>+36</span></td>
+              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-ch" alt="country flag ch"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=86630" target="_blank"><span>Meleanos Athletics</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>5</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>19</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-pl" alt="country flag pl"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=41502" target="_blank"><span>BMW Jelenia Gora</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>4</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>19</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="inactif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-au" alt="country flag au"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=7566" target="_blank"><span>DVS Strikers Athletics</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>3</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>19</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="inactif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-ng" alt="country flag ng"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=67926" target="_blank"><span>Mad Nyce</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>3</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>19</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-es" alt="country flag es"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=30889" target="_blank"><span>Saskatchewan Sasquatchs</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>3</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>19</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="inactif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-es" alt="country flag es"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=61584" target="_blank"><span>Txuario</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>3</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>19</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-bg" alt="country flag bg"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=88777" target="_blank"><span>Dan Kolov 2018</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>3</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>19</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="inactif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-it" alt="country flag it"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=421" target="_blank"><span>Società Atletica Pellethinaikos</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>2</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>19</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-it" alt="country flag it"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=7953" target="_blank"><span>MANS</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>2</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>19</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-fr" alt="country flag fr"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=34918" target="_blank"><span>Angers club</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>2</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>32</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-au" alt="country flag au"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=68299" target="_blank"><span>Misty Mountain Homies</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>2</span></td>
+              <td class="right"><span>17</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>32</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-au" alt="country flag au"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=83757" target="_blank"><span>Rogue Nation</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>2</span></td>
+              <td class="right"><span>12</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>34</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-de" alt="country flag de"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=55383" target="_blank"><span>SG Endschuetz</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>16</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>34</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-pl" alt="country flag pl"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=42904" target="_blank"><span>Astoria Troy Walbrzych</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>16</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>34</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-de" alt="country flag de"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=2815" target="_blank"><span>Munich Running Club</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>15</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>34</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-ng" alt="country flag ng"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=80440" target="_blank"><span>LeanBody Perform</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>13</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>34</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="inactif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-za" alt="country flag za"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=76596" target="_blank"><span>Golden Eagles</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>12</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>34</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-au" alt="country flag au"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=75674" target="_blank"><span>Lynchpins AC</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>12</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>34</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="inactif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-pl" alt="country flag pl"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=82147" target="_blank"><span>Regalica</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>11</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>34</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="inactif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-es" alt="country flag es"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=49115" target="_blank"><span>Valencia Terra i Mar</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>10</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>34</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="inactif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-au" alt="country flag au"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=55479" target="_blank"><span>Team Telstra</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>9</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>34</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="inactif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-ph" alt="country flag ph"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=71545" target="_blank"><span>Pasay Runners Inc</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>7</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>34</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="inactif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-es" alt="country flag es"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=75041" target="_blank"><span>Steinhöffer Athletic</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>7</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>34</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-ch" alt="country flag ch"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=86514" target="_blank"><span>Sporting Olomouc</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>7</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>34</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="inactif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-es" alt="country flag es"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=7847" target="_blank"><span>Gigolo's</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>6</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>34</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-es" alt="country flag es"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=7714" target="_blank"><span>Indomables</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>6</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>34</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-de" alt="country flag de"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=3894" target="_blank"><span>Chośebuz</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>5</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>34</span></td>
+              <td class="center green little"><span>+21</span></td>
+              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-es" alt="country flag es"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=50695" target="_blank"><span>Ecole</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>5</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>34</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="inactif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-fr" alt="country flag fr"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=74655" target="_blank"><span>Spade Pirates</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>4</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>34</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-pe" alt="country flag pe"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=81806" target="_blank"><span>Monkeeeees</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>4</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>34</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="inactif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-my" alt="country flag my"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=60200" target="_blank"><span>Kuala Lumpur</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>3</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>34</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="inactif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-pl" alt="country flag pl"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=88555" target="_blank"><span>Nova</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>3</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>34</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="actif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-de" alt="country flag de"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=13665" target="_blank"><span>OSC Bernsdorf</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>3</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>34</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="inactif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-fr" alt="country flag fr"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=54928" target="_blank"><span>Sporting Club Actoinais</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>2</span></td>
+            </tr>
+            <tr>
+              <td class="right"><span>34</span></td>
+              <td class="center red little"><span>-1</span></td>
+              <td class="inactif-text left"><img src="/mt-stats/static/image/flags/flag_placeholder.png" class="flag flag-de" alt="country flag de"><a href="https://www.maxithlon.com/user/dettagli_societa.php?u=75774" target="_blank"><span>LG Baunatal</span><a></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>0</span></td>
+              <td class="right"><span>1</span></td>
+              <td class="right"><span>2</span></td>
+            </tr>
+          
+          </tbody>
+        </table>
+        <div>
+          <p class="table-legend">1537 clubs, 13 clubs titrés, 31 clubs sur le podium</p>
+          <p class="table-legend">*: changement de position au classement, N: nouveau club dans le classement</p>
+          <p class="table-legend">source de données: saison 79</p>
+        </div>
+      </section>
+      <aside class="aside-return-icon">
+          <a href="#" class="return-icon">&#8743</a>
+      </aside>
+      </section>
+    </main>
+    <footer class="track-border">
+      <a class="maxithlon-link" href="https://www.maxithlon.com" target="_blank"><img src="https://www.maxithlon.com/common/images/esterne/maxithlon_mb.gif"  alt="Maxithlon" border="0"></a>
+      <p>Photo de <a href="https://unsplash.com/@haroldjonker?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Harold Jonker</a> sur <a href="https://unsplash.com/s/photos/athletics-stadium?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a></p>
+    </footer>
+    <script type=text/javascript src="/mt-stats/static/js/submit_select.js"></script>
+    <script type=text/javascript src="/mt-stats/static/js/table_sort.js"></script>
+
+  </body>
+</html>

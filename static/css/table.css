@@ -136,6 +136,10 @@ table .th-sort-desc::after {
     min-width: 12rem;
 }
 
+.table-th-score {
+    min-width: 8rem;
+}
+
 /* text alig in table cell */
 .left {
     text-align: left;
@@ -156,6 +160,10 @@ table .th-sort-desc::after {
     
 .female {
     color: var(--female-color);
+}
+
+.gras {
+    font-weight: bolder;
 }
 
 .green {
